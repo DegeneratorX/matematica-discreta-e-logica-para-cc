@@ -1,0 +1,75 @@
+- Tabelas verdades importantes:
+
+    AND
+    p  q  p ∧ q
+    V  V    V
+    V  F    F
+    F  V    F
+    F  F    F
+
+    OR
+    p  q  p ∨ q
+    V  V    V
+    V  F    V
+    F  V    V
+    F  F    F
+
+    XOR
+    p  q  p ⊕ q
+    V  V    F
+    V  F    V
+    F  V    V
+    F  F    F
+
+    SE ENTÃO
+    p  q  p → q
+    V  V    V
+    V  F    F
+    F  V    V
+    F  F    V
+    
+    SSE
+    p  q  p ⇔ q
+    V  V    V
+    V  F    F
+    F  V    F
+    F  F    V
+
+    NÃO
+    p ¬p
+    V  F
+    F  V
+
+    PRECEDÊNCIA
+    ¬      1°
+    ∧      2°
+    ∨, ⊕  3°
+    →, ⇔   4°
+
+
+- Tabelas verdades extras:
+
+    TAUTOLOGIA (Sempre é verdadeiro. Afinal, sempre se um for verdadeiro, o outro é falso. Ou um ou outro. Tautologia é quando toda a proposição composta dá V)
+    p ¬p  p ∨¬p
+    V  F    V
+    F  V    V
+
+    CONTRADIÇÃO (É impossível os dois serem verdadeiros ou falsos ao mesmo tempo. Contradição é uma negação da Tautologia e vice-versa. Contradição é quando 
+    toda a proposição composta dá F)
+    p ¬p  p ∧¬p
+    V  F    F
+    F  V    F
+
+
+- Equivalências Importantes:
+    - ¬(p ∧ q) equivale a (¬p ∨ ¬q) [De Morgan]
+    - ¬(p ∨ q) equivale a (¬p ∧ ¬q) [De Morgan]
+
+    - (p → q) equivale a (¬p ∨ q)
+    - ¬(p → q) equivale a (p ∧ ¬q)
+
+    - (p ⇔ q) equivale a (p → q) ∧ (q → p)
+    - (p ⇔ q) equivale a ¬(p ⊕ q)
+
+    - (p → q) equivale a (¬q → ¬p) [contrapositiva]
+    - (p → q) equivale a (p ∧ ¬q) → Falso [absurdo]
