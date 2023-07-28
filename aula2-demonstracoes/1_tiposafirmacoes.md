@@ -1,8 +1,0 @@
-- Tipos de afirmações
-    - Definições (estabelecido pelo humano, sem necessidade de provar. Ponto inicial.)
-    - Axioma/Postulado (fato não questionado, mas uma regra inquebrável para formular um teorema)
-    - Teorema (afirmação demonstrada)
-    - Lema (teorema que precisa para ajudar outro teorema)
-    - Corolário (teorema que é consequẽncia do primeiro teorema)
-    - Lei (regra universal irrefutável aplicada para um sistema onde a lei descreve)
-    - Conjetura (afirmação que não existe prova)
