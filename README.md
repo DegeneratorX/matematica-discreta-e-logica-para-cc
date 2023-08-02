@@ -10,9 +10,6 @@ Nem tudo de ambas será 100% abordado, visto que tem coisas que são muito espec
 - Teoria dos Conjuntos
 - Métodos de demonstração
 - Indução
-- Relações
-- Funções
-- Recorrências
 
 ## Lógica para Ciência da Computação
 
