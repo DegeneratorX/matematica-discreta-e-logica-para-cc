@@ -72,7 +72,9 @@ Outro exemplo, dessa vez em teoria dos grafos, é a conjetura de Four Color (Con
 
 # Tipos de provas
 
-Existem várias formas de provar afirmações matemáticas, e todas elas utilizam as proposições e notações de forma implícita.
+Existem várias formas de provar afirmações matemáticas e teoremas, e todas elas utilizam as proposições e notações de forma implícita.
+
+Os teoremas podem possuir muitas demonstrações diferentes. Qual a melhor é, até certo ponto, uma questão de gosto, e depende para quem a demonstração é dirigida. Em geral, quanto mais curta a prova, melhor; mas há outros critérios, como a facilidade de compreensão, a simplicidade dos passos, etc.. De modo geral, quando não sabemos se uma afirmação é verdadeira, nossa primeira preocupação é encontrar uma demonstração que nos convença. Para convencer outras pessoas, entretanto, devemos cuidar para que a demonstração seja, além de correta, também simples, clara e objetiva.
 
 ## Método direto
 
@@ -126,3 +128,34 @@ Baseia-se na equivalência lógica entre $p \rightarrow q$ e a fórmula $(p \lan
 
 >Nota: observe que existe o uso implícito da equivalência lógica de absurdo $(p \rightarrow q) \Leftrightarrow (p \land \neg q) \rightarrow \text{ Falso}$
 
+## Método da Implicação com Tese Conjuntiva
+
+Para provar uma conjunção de duas afirmações $p \land q$, basta provar cada uma das afirmações separadamente.
+
+Em particular, para provar uma implicação da forma $p \rightarrow (q \land r)$, podemos observar que ela equivale logicamente à afirmação “$(p \rightarrow q) \land (p \rightarrow r)$”. Portanto, basta provar cada uma destas duas implicacões separadamente. Se usarmos o método direto para provar cada implicação, supomos que $p$ é verdadeira; provamos então $q$; e provamos em seguida $r$.
+
+
+### Teorema: Se 6 divide um inteiro $n$, então 2 divide $n$ e 3 divide $n$.
+
+### Prova:
+
+Se 6 divide $n$ então existe um inteiro $k$ tal que $n = 6k$. Então, $n = 2(3k)$, logo 2 divide $n$.
+Temos também que $n = 3(2k)$, logo 3 divide $n$. Portanto 2 divide $n$ e 3 divide $n$.
+
+## Método da Implicação com Hipótese Disjuntiva
+
+Para provar uma implicação da forma $(p \lor q) \rightarrow r$, podemos observar que ela equivale logicamente à afirmação “$(p \rightarrow r) \land (q \rightarrow r)$”. Portanto, basta provar cada uma destas duas implicacões separadamente.
+
+### Teorema: Para quaisquer inteiros $m$ e $n$, se $m$ for par ou $n$ for par, então $mn$ é par.
+
+### Prova:
+
+Sejam $m$ e $n$ inteiros quaisquer. Temos dois casos (não exclusivos):
+
+- Caso 1: $m$ é par. Pela definição, existe um inteiro $q$ tal que $m = 2q$. Nesse caso,
+$mn = (2q)n = 2(nq)$, e portanto $mn$ é par.
+
+- Caso 2: $n$ é par. Pela definição, existe um inteiro $r$ tal que $n = 2r$. Nesse caso,
+$mn = m(2r) = 2(mr)$, e portanto $mn$ é par.
+
+Portanto, se $m$ é par ou $n$ não é par, $mn$ é par.

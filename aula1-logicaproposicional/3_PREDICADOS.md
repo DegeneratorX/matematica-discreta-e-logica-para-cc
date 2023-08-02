@@ -103,11 +103,13 @@ Resumindo, a negação do "existe" se resume a "nenhum", ou "não existe". Exemp
 
 - $(\exists x \in D)(P(x) \lor Q(x))$ equivale a $[(\exists x \in D)P(x)] \lor [(\exists x \in D)Q(x)]$.
 
-# Provas com quantificadores
+# Provas com Quantificadores Universais
 
 Existem outros tipos de provas importantes utilizando o básico da lógica de predicados.
 
-Aqui são as provas que utilizam bem mais os conceitos de lógica de predicados.
+Essas provas se utilizam das provas propositivas, então o método da contrapositiva, direto ou até absurdo podem ser utilizados. Na maior parte dos casos, aqui será utilizada a prova direta.
+
+Aqui são as provas que utilizam dos conceitos de quantificadores universais.
 
 ## Método da Generalização Universal
 
@@ -131,9 +133,25 @@ Por exemplo, se temos a afirmação "Para todo $x$ no conjunto vazio, $P(x)$ é 
 
 - Essa afirmação é verdadeira por vacuidade, pois não existem primos pares maiores que dois.
 
+# Provas com Quantificadores Existenciais
+
+Aqui são as provas que utilizam dos conceitos de quantificadores existenciais
+
+## Método Construtivo
+
+Consiste em provar que a afirmação simples $(\exists x \in D)P(x)$ é verdade.
+
+### Teorema: Existem três números inteiros positivos tais que $x^2 + y^2 = x^2$.
+
+### Prova:
+
+Sejam $x = 3$, $y = 4$, e $z = 5$. Veja que $3^2 + 4^2 = 5^2 = 25$, e portanto a afirmação é verdadeira.
+
 ## Método do Contra-Exemplo
 
 A prova por contraexemplo é um tipo de prova que refuta uma afirmação rapidamente mostrando um exemplo específico em que ela é falsa. Em vez de mostrar que a afirmação é verdadeira para todos os casos possíveis, basta encontrar um único exemplo que contradiga a afirmação para provar que ela não é válida universalmente. Se parar para pensar, é a forma que os seres humanos mais provam algo durante sua vida, pois basta um exemplo que quebre a generalização de algo.
+
+Resumindo, é usado pra refutar conjeturas da forma $(\forall x \in D)P(x)$, pois a negação é $(\exists x \in D)\neg P(x)$. Ou seja, existe um contra exemplo que nega a afirmação.
 
 ### Teorema: Para todo primo $n$, o inteiro $(2^n) - 1$ é primo.
 
